@@ -37,7 +37,7 @@ dataInput.question('Please insert the first value\n',function(firstValue){
         dataInput.close()
     
      }else if( 1000 < lastValue || 100> lastValue){
-        console.log('Please insert only values betrween 0 and 500')
+        console.log('Please insert only values betrween 100 and 1000')
         dataInput.close()
     
      }else if( isNaN(lastValue)){
@@ -45,8 +45,9 @@ dataInput.question('Please insert the first value\n',function(firstValue){
         dataInput.close()
     
      }else{
-        var evenOrOdd = oddOrEven(1,10)
+        var evenOrOdd = oddOrEven(10)
         console.log(evenOrOdd)
+        dataInput.close()
 
      }
  })
