@@ -1,4 +1,6 @@
 const { oddOrEven } = require("./model/oddOrEven")
+const { oddOrEvenOdd } = require("./model/oddOrEven")
+
 
 
 
@@ -45,8 +47,14 @@ dataInput.question('Please insert the first value\n',function(firstValue){
         dataInput.close()
     
      }else{
-        var evenOrOdd = oddOrEven(10)
+
+        var evenOrOdd = oddOrEven(Number(firstValue), Number(lastValue))
+        
+        var evenOrOddEven = oddOrEvenOdd(Number(firstValue), Number(lastValue))
+        
+
         console.log(evenOrOdd)
+    
         dataInput.close()
 
      }
